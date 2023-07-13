@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezeptbuch</title>
+    <title>REZEPTBUCH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">Finden Sie eine Mahlzeit für Ihre Zutaten</h2>
+                <blockquote>Echtes Essen hat keine Zutaten, echtes Essen besteht aus Zutaten..<br>
+                    <cite>- Mohanad Ilewi<span style='font-size:25px;'>&#128526;</span></cite>
+                </blockquote>
+
+            </div class = "meal-search-box">
+            <input type="text" class="search-content" placeholder="Gebe eine Zutat ein" id = "search-input">
+            <button type="submit" class="search-btn" id = "search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            </div>
+            </div>
+
+            <div class="meal-result">
+                <h2 class="title">Ihre Suchergebnisse:</h2>
+                <div id="meal">
+                    <!-- meal item -->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="linsensuppe.jpg" alt="suppe">    
+                        </div>
+                        <div class="meal-name">
+                            <h3>Linsensuppe</h3>
+                            <a href="#" class="recipe-btn">Rezept Holen</a>
+                        </div>
+                    </div>
+                    <!-- end of meal item -->
+                </div>
+            </div>
+
+        </div>    
+    </div>   
+
+
+    <script src="main.js"></script>
 </body>
 </html>
