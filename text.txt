@@ -1,0 +1,136 @@
+  <!-- meal item -->
+         <div class="meal-item">
+            <div class="meal-img">
+              <img src="Image/linsensuppe.jpg" alt="Suppe">
+            </div>
+            <div class="meal-name">
+              <h3>LinsenSuppe</h3>
+              <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+          </div> 
+
+
+          <!-- end of meal item -->
+
+          <!-- meal item -->
+         <div class="meal-item">
+            <div class="meal-img">
+              <img src="Image/Syrische Auberginen gewürzt.jpg" alt="Mtabal">
+            </div>
+            <div class="meal-name">
+              <h3>Mtabal</h3>
+              <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->
+
+          <!-- meal item -->
+          <div class="meal-item">
+            <div class="meal-img">
+              <img src="Image/Taboule'.jpg" alt="Salat">
+            </div>
+            <div class="meal-name">
+              <h3>Taboule</h3>
+              <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+          </div>
+          <!-- end of meal item -->
+
+            <!-- meal item -->
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="Image/Taboule'.jpg" alt="Salat">
+              </div>
+              <div class="meal-name">
+                <h3>Taboule</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+            <!-- end of meal item -->
+
+               <!-- meal item -->
+               <div class="meal-item">
+                <div class="meal-img">
+                  <img src="Image/Mlokheye.jpg" alt="Salat">
+                </div>
+                <div class="meal-name">
+                  <h3>Taboule</h3>
+                  <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+              </div>
+              <!-- end of meal item -->
+
+              <!-- meal item -->
+              <div class="meal-item">
+                <div class="meal-img">
+                  <img src="Image/Taboule'.jpg" alt="Salat">
+                </div>
+                <div class="meal-name">
+                  <h3>Taboule</h3>
+                  <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+              </div>
+              <!-- end of meal item -->
+
+
+                <!-- meal item -->
+                <div class="meal-item">
+                <div class="meal-img">
+                  <img src="Image/Taboule'.jpg" alt="Salat">
+                </div>
+                <div class="meal-name">
+                  <h3>Taboule</h3>
+                  <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
+              </div>
+              <!-- end of meal item -->
+
+                <!-- meal item -->
+                <div class="meal-item">
+                  <div class="meal-img">
+                    <img src="Image/Taboule'.jpg" alt="Salat">
+                  </div>
+                  <div class="meal-name">
+                    <h3>Taboule</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                  </div>
+                </div>
+                <!-- end of meal item -->
+
+                <!-- meal item -->
+                <div class="meal-item">
+                  <div class="meal-img">
+                    <img src="Image/Taboule'.jpg" alt="Salat">
+                  </div>
+                  <div class="meal-name">
+                    <h3>Taboule</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                  </div>
+                </div>
+                <!-- end of meal item -->
+
+
+                   <!-- meal content -->
+      <div class="meal-details-content">
+        <h2 class="recipe-title">Meals Name Here</h2>
+        <p class="recipe-category">Category Name</p>
+        <div class="recipe-instruct">
+          <h3>Instructions:</h3>
+          <p>
+            Gewaschene gelbe Linsen
+            1 Karotte schälen und schneiden
+            Wasser – 4 Tassen
+            Zimtstange
+            Zwei große Löffel Pflanzenöl
+          </p>
+        
+        </div>
+
+        <div class="recipe-meal-img">
+          <img src="Image/linsensuppe.jpg" alt="">
+        </div>
+
+        <div class="recipe-link">
+          <a href="#" target="_blank">Watch Video</a>
+        </div>
+      </div>

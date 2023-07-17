@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rezeptbuch</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel = "stylesheet" href = "CSS/style.css">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
-  <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-search">
-        <h2 class = "title">Find Meals For Your Ingredients</h2>
+
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals For Your Ingredients</h2>
         <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-          <cite>- Sir.Mohanad Ilewi<span style='font-size:25px;'>&#128526;</span></cite>
+          <cite>- Mohanad Ilewi</cite>
         </blockquote>
 
-        <div class = "meal-search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-          <button type = "submit" class = "search-btn btn" id = "search-btn">
-            <i class = "fas fa-search"></i>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
           </button>
         </div>
       </div>
 
-      <div class = "meal-result">
-        <h2 class = "title">Your Search Results:</h2>
-        <div id= "meal">
-          <!-- meal item -->
-          <div class = "meal-item">
-            <div class = "meal-img">
-              <img src = "Image/linsensuppe.jpg" alt = "Suppe">
-            </div>
-            <div class = "meal-name">
-              <h3>LinsenSuppe</h3>
-              <a href = "#" class = "recipe-btn">Get Recipe</a>
-            </div>
-          </div> 
-          <!-- end of meal item -->
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+
+
+       
+      
+
+
+
+
+
+
         </div>
       </div>
+      
 
 
-      <div class= "meal-details">
+      <div class="meal-details">
         <!-- recipe close btn -->
-        <button type="button" class="btn recipe-close-btn" id = "recipe-close-btn">
-            <i class="fas fa-items"></i>
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
         </button>
 
         <!-- meal content -->
-        <div class = "meal-details-content">
-            <h2 class = "recipe-title">Meals Name Here</h2>
-            <p class = "recipe-category">Category Name</p>
-            <div class = "recipe-instruct">
-                <h3>Instructions</h3>
-                <p> Gewaschene gelbe Linsen
-                    1 Karotte schälen und schneiden
-                    Wasser – 4 Tassen
-                    Zimtstange
-                    Zwei große Löffel Pflanzenöl</p>
-            </div>
-            <div class = "recipe-meal-img">
-                <img src = "Image/linsensuppe.jpg" alt = "">
-            </div>
-            <div class="recipe-link">
-                <a href = "#" target = "_blank">Watch Video</a>
-            </div>
-
+        <div class="meal-details-content">
+            <h2 class="recipe-title">Meals Name Here</h2>
+          <p class="recipe-category">Category Name</p>
+          <div class="recipe-instruct">
+            <h3>Instructions:</h3>
+            
+          </div>
+          <div class="recipe-meal-img">
+            <img src="path/to/local/image.jpg" alt="">
+          </div>
+          <div class="recipe-link">
+            <a href="#" target="_blank">Watch Video</a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
+  
 
-    <script src="JS/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
