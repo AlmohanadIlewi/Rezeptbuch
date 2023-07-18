@@ -11,7 +11,6 @@ recipeCloseBtn.addEventListener('click', () => {
 });
 
 
-
 // Get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
@@ -35,9 +34,7 @@ function getMealList() {
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY'
         },
-
-
-
+        
 
         {
             mealID: 'meal2',
