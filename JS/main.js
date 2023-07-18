@@ -15,10 +15,10 @@ recipeCloseBtn.addEventListener('click', () => {
 // Get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
-    // Replace this with your own logic to filter meals based on ingredients
-    // For this example, let's assume you have a list of meal objects with properties like mealID, mealName, image, etc.
+
 
     let meals = [
+        
         {
             mealID: 'meal0',
             mealName: 'LinsenSuppe',
@@ -35,7 +35,8 @@ function getMealList() {
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY'
         },
-        // Add more meal objects as needed
+
+
 
 
         {
@@ -58,8 +59,8 @@ function getMealList() {
 
         {
             mealID: 'meal4',
-            mealName: 'Mlokheye',
-            image: 'img/Mlokheye.jpg',
+            mealName: 'Molokhia',
+            image: 'img/Molokhia.jpg',
             category: 'Category 2',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ'
@@ -72,7 +73,7 @@ function getMealList() {
             category: 'Category 2',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/0t7sFXcoyDw'
-           
+        
         },
 
         {
@@ -90,7 +91,7 @@ function getMealList() {
             image: 'Img/Halauet Aljeben.jpg',
             category: 'Category 2',
             instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
+            youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU'
         },
 
         {
@@ -105,45 +106,55 @@ function getMealList() {
 
     ];
 
+    let filteredMeals = meals.filter((meal) =>
+    meal.mealName.toLowerCase().includes(searchInputTxt.toLowerCase())
+);
+
+
     let html = "";
-    meals.forEach(meal => {
+    if (filteredMeals.length > 0) {
+    filteredMeals.forEach((meal) => {
         html += `
-            <div class="meal-item" data-id="${meal.mealID}">
-                <div class="meal-img">
-                    <img src="${meal.image}" alt="#">
-                </div>
-                <div class="meal-name">
-                    <h3>${meal.mealName}</h3>
-                    <a href="#" class="recipe-btn">Get Recipe</a>
-                </div>
+        <div class="meal-item" data-id="${meal.mealID}">
+            <div class="meal-img">
+            <img src="${meal.image}" alt="food">
             </div>
+            <div class="meal-name">
+            <h3>${meal.mealName}</h3>
+            <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+        </div>
         `;
     });
 
+} else{
+    html = "Sorry, we didn't find any meal!";
+    mealList.classList.add('notFound');
+
+}
+
     mealList.innerHTML = html;
-    mealList.classList.remove('notFound');
 }
 
 // Get meal recipe details
 function getMealRecipe(mealIDs) {
     mealIDs.preventDefault();
     if (mealIDs.target.classList.contains('recipe-btn')) {
-      let mealItem = mealIDs.target.parentElement.parentElement;
-      let mealID = mealItem.dataset.id;
-      // Replace this with your own logic to get the recipe details of the selected meal
-      // For this example, let's assume you have the recipe details for each meal
-  
-      let mealDetails = {
+        let mealItem = mealIDs.target.parentElement.parentElement;
+        let mealID = mealItem.dataset.id;
+    
+
+        let mealDetails = {
 
 
         // Vorspeisen
         meal0: {
-          mealName: 'LinsenSuppe',
-          category: 'Category 0',
-          instructions: 'Instructions for Meal 1',
-          youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs',
-          imagePath: 'img/Linsensuppe.jpg'
-          
+            mealName: 'LinsenSuppe',
+            category: 'Category 0',
+            instructions: 'Instructions for Meal 1',
+            youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs',
+            imagePath: 'img/Linsensuppe.jpg'
+    
         },
 
         meal1: {
@@ -173,11 +184,11 @@ function getMealRecipe(mealIDs) {
         },
 
         meal4: {
-            mealName: 'Mlokheye',
+            mealName: 'Molokhia',
             category: 'Category 2',
             instructions: 'Instructions for Meal 4',
             youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ',
-            imagePath: 'img/Mlokheye.jpg'
+            imagePath: 'img/Molokhia.jpg'
         },
 
         meal5: {
@@ -203,7 +214,7 @@ function getMealRecipe(mealIDs) {
             mealName: 'Halauet Aljeben',
             category: 'Category 2',
             instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=abcd1234',
+            youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU',
             imagePath: 'img/Halauet Aljeben.jpg'
         },
 
@@ -216,14 +227,15 @@ function getMealRecipe(mealIDs) {
         },
 
 
-      };
-  
-      mealRecipeModal(mealID, mealDetails[mealID]);
+    };
+    
+    mealRecipeModal(mealID, mealDetails[mealID]);
+
     }
-  }
-  
+}
+
   // Create a modal
-  function mealRecipeModal(mealID, meal) {
+    function mealRecipeModal(mealID, meal) {
     let html = `
         <h2 class="recipe-title">${meal.mealName}</h2>
         <p class="recipe-category">${meal.category}</p>
@@ -243,3 +255,4 @@ function getMealRecipe(mealIDs) {
 
 
 }
+
