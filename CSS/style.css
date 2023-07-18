@@ -10,6 +10,8 @@
     --tenne-tawny-dark: #b54507;
 }
 body{
+
+    background: green;
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
