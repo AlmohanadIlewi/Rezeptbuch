@@ -10,13 +10,15 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+let meals = [];
+
+
 
 // Get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
 
-
-    let meals = [
+    meals = [
         
         {
             mealID: 'meal0',
@@ -34,13 +36,12 @@ function getMealList() {
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY'
         },
-        
 
         {
             mealID: 'meal2',
             mealName: 'Taboule',
             image: 'img/Taboule.jpg',
-            category: 'Category 2',
+            category: 'Category 3',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=5sEYkx49du0'
         },
@@ -49,7 +50,7 @@ function getMealList() {
             mealID: 'meal3',
             mealName: 'Mansaf',
             image: 'Img/Mansaf.jpg',
-            category: 'Category 2',
+            category: 'Category 4',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=ELoCBFgo_4U'
         },
@@ -58,7 +59,7 @@ function getMealList() {
             mealID: 'meal4',
             mealName: 'Molokhia',
             image: 'img/Molokhia.jpg',
-            category: 'Category 2',
+            category: 'Category 5',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ'
         },
@@ -67,7 +68,7 @@ function getMealList() {
             mealID: 'meal5',
             mealName: 'Mahashi',
             image: 'img/Mahashi.png',
-            category: 'Category 2',
+            category: 'Category 6',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/0t7sFXcoyDw'
         
@@ -77,7 +78,7 @@ function getMealList() {
             mealID: 'meal6',
             mealName: 'Kunafa',
             image: 'Img/Kunafa.jpg',
-            category: 'Category 2',
+            category: 'Category 7',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
         },
@@ -86,7 +87,7 @@ function getMealList() {
             mealID: 'meal7',
             mealName: 'Halauet Aljeben',
             image: 'Img/Halauet Aljeben.jpg',
-            category: 'Category 2',
+            category: 'Category 8',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU'
         },
@@ -95,7 +96,7 @@ function getMealList() {
             mealID: 'meal8',
             mealName: 'Verschiedene syrische Süßigkeiten',
             image: 'Img/Verschiedene syrische Süßigkeiten.jpg',
-            category: 'Category 2',
+            category: 'Category 9',
             instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
         },
@@ -139,7 +140,8 @@ function getMealRecipe(mealIDs) {
     if (mealIDs.target.classList.contains('recipe-btn')) {
         let mealItem = mealIDs.target.parentElement.parentElement;
         let mealID = mealItem.dataset.id;
-    
+      // Replace this with your own logic to get the recipe details of the selected meal
+      // For this example, let's assume you have the recipe details for each meal
 
         let mealDetails = {
 
@@ -147,8 +149,8 @@ function getMealRecipe(mealIDs) {
         // Vorspeisen
         meal0: {
             mealName: 'LinsenSuppe',
-            category: 'Category 0',
-            instructions: 'Instructions for Meal 1',
+            category: 'Category 1',
+            instructions: 'fsds fgdhdh',
             youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs',
             imagePath: 'img/Linsensuppe.jpg'
     
@@ -157,15 +159,15 @@ function getMealRecipe(mealIDs) {
         meal1: {
             mealName: 'Mtabal',
             category: 'Category 2',
-            instructions: 'Instructions for Meal 1',
+            instructions: 'Instructions for Meal 2',
             youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY',
             imagePath: 'img/Syrische Auberginen gewürzt.jpg'
         },
         
         meal2: {
             mealName: 'Taboule',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 3',
+            instructions: 'Instructions for Meal 3',
             youtubeLink: 'https://www.youtube.com/watch?v=5sEYkx49du0',
             imagePath: 'img/Taboule.jpg'
         },
@@ -174,24 +176,24 @@ function getMealRecipe(mealIDs) {
 
         meal3: {
             mealName: 'Mansaf',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 4',
+            instructions: 'Instructions for Meal 4',
             youtubeLink: 'https://www.youtube.com/watch?v=ELoCBFgo_4U',
             imagePath: 'img/Mansaf.jpg'
         },
 
         meal4: {
             mealName: 'Molokhia',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 4',
+            category: 'Category 5',
+            instructions: 'Instructions for Meal 5',
             youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ',
             imagePath: 'img/Molokhia.jpg'
         },
 
         meal5: {
             mealName: 'Mahashi',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 6',
+            instructions: '',
             youtubeLink: 'https://www.youtube.com/shorts/0t7sFXcoyDw',
             imagePath: 'img/Mahashi.png'
         },
@@ -201,24 +203,24 @@ function getMealRecipe(mealIDs) {
 
         meal6: {
             mealName: 'Kunafa',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 7',
+            instructions: 'Instructions for Meal 7',
             youtubeLink: 'https://www.youtube.com/watch?v=abcd1234',
             imagePath: 'img/Kunafa.jpg'
         },
 
         meal7: {
             mealName: 'Halauet Aljeben',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 8',
+            instructions: 'Instructions for Meal 8',
             youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU',
             imagePath: 'img/Halauet Aljeben.jpg'
         },
 
         meal8: {
             mealName: 'Verschiedene syrische Süßigkeiten',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
+            category: 'Category 9',
+            instructions: 'Instructions for Meal 9',
             youtubeLink: 'https://www.youtube.com/watch?v=abcd1234',
             imagePath: 'img/Verschiedene syrische Süßigkeiten.jpg'
         },
@@ -250,6 +252,54 @@ function getMealRecipe(mealIDs) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 
-
 }
+
+function addIngredient() {
+    let ingredientsList = document.getElementById('ingredients-list');
+
+    let newIngredient = document.createElement('div');
+
+    newIngredient.innerHTML = `
+        <label for="ingredient-name">Name:</label>
+        <input type="text" id="ingredient-name" name="ingredient-name">
+        <label for="ingredient-quantity">Menge:</label>
+        <input type="text" id="ingredient-quantity" name="ingredient-quantity">
+        <button type="button" onclick="removeIngredient(this)">Entfernen</button>
+    `;
+
+    ingredientsList.appendChild(newIngredient);
+}
+
+function removeIngredient(button) {
+    let ingredient = button.parentNode;
+    ingredient.remove();
+}
+
+function captureFormData(event) {
+    event.preventDefault();
+
+    let recipeName = document.querySelector("#recipe-name").value;
+    let recipeDescription = document.querySelector("#recipe-description").value;
+    let ingredientNames = Array.from(document.querySelectorAll("#ingredient-name")).map(input => input.value);
+    let ingredientQuantities = Array.from(document.querySelectorAll("#ingredient-quantity")).map(input => input.value);
+
+    let ingredients = ingredientNames.map((name, index) => ({
+        name: name,
+        quantity: ingredientQuantities[index],
+    }));
+
+    let recipe = {
+        name: recipeName,
+        description: recipeDescription,
+        ingredients: ingredients,
+    };
+    meals.push(recipe);
+    
+    console.log(meals);
+}
+
+document.querySelector("#recipe-form").addEventListener("submit", captureFormData);
+
+
+
 

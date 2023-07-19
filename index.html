@@ -7,8 +7,8 @@
   <title>Find Meal For Your Ingredients</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" >
 </head>
 
 <body>
@@ -17,10 +17,9 @@
     <div class="meal-wrapper">
       <div class="meal-search">
         <h2 class="title">Find Meals For Your Ingredients</h2>
-        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-          <cite>- Mohanad Ilewi</cite>
+        <blockquote ><b>Real food doesn't have ingredients, real food is ingredients.</b><br>
+          <cite><b>- Mohanad Ilewi</b></cite>
         </blockquote>
-
 
         <div class="meal-search-box">
           <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
@@ -29,50 +28,94 @@
           </button>
         </div>
       </div>
+      <img src="img/HGB.jpg" alt="meal" width="560" height="460">
 
       <div class="meal-result">
         <h2 class="title">Your Search Results:</h2>
+  
         <div id="meal">
-
-
-       
-      
-
-
-
-
-
-
+          
         </div>
+
       </div>
+
+      <div class="addMealContainer">
+        <h1>Add Meal</h1>
+        
+        <form id="recipe-form">
+            <label for="recipe-name">ID:</label><br>
+            <input type="text" id="mealId" name="recipe-name"><br>
+            <label for="recipe-name">MealName:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name"><br>
+            <label for="recipe-description">Beschreibung:</label><br>
+            <textarea id="recipe-description" name="recipe-description"></textarea><br>
+            <label for="recipe-image">Bild hochladen:</label><br>
+            <input type="file" id="recipe-image" name="recipe-image" accept="image/*"><br>
+            <input type="submit" value="Submit">
+            <h2>Zutaten</h2>
+            <div id="ingredients-list">
+                <div>
+                    <label for="ingredient-name">Name:</label>
+                    <input type="text" id="ingredient-name" name="ingredient-name">
+                    <label for="ingredient-quantity">Menge:</label>
+                    <input type="text" id="ingredient-quantity" name="ingredient-quantity">
+                    <button type="button" onclick="removeIngredient(this)">Entfernen</button>
+                </div>
+            </div>
+            <button type="button" onclick="addIngredient()">Zutat hinzufügen</button><br>
+            <input type="submit" value="Rezept speichern">
+        </form>
+
+    <script src="scripts.js"></script>
+      </div>
+
       
 
+      
 
       <div class="meal-details">
         <!-- recipe close btn -->
         <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
           <i class="fas fa-times"></i>
         </button>
+    
 
         <!-- meal content -->
+
         <div class="meal-details-content">
             <h2 class="recipe-title">Meals Name Here</h2>
           <p class="recipe-category">Category Name</p>
           <div class="recipe-instruct">
-            <h3>Instructions:</h3>
-            
-          </div>
-          <div class="recipe-meal-img">
-            <img src="path/to/local/image.jpg" alt="">
+
+          <!-- <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro,
+              reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit
+              autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam,
+              esse numquam nisi ut adipisci in?</p> -->
+          </div> 
+          
+    
+
+        
+        <div class="recipe-meal-img">
+            <img src="#" alt="">
           </div>
           <div class="recipe-link">
             <a href="#" target="_blank">Watch Video</a>
-          </div>
+        </div> 
+
+       
+      
+
         </div>
+     
       </div>
     </div>
   </div>
+ 
 
+  
 
   <script src="js/main.js"></script>
 </body>
