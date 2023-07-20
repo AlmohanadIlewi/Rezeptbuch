@@ -4,11 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Meal For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Style ---ADD Source to HTML-->
+
   <link rel="stylesheet" href="css/style.css" type="text/css" >
+
+  <!-- icons: ... Font Awesome-Bibliothek für das Styling von Symbolen-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous"/>
+
+
+  <title>Mein Rezeptbuch</title>
+
 </head>
 
 <body>
@@ -16,14 +25,15 @@
   <div class="container">
     <div class="meal-wrapper">
       <div class="meal-search">
-        <h2 class="title">Find Meals For Your Ingredients</h2>
-        <blockquote ><b>Real food doesn't have ingredients, real food is ingredients.</b><br>
+        <h2 class="title">Finden Sie Mahlzeiten für Ihre Zutaten</h2>
+        <blockquote ><b>Echtes Essen hat keine Zutaten, echtes Essen besteht aus Zutaten.</b><br>
           <cite><b>- Mohanad Ilewi</b></cite>
         </blockquote>
 
         <div class="meal-search-box">
-          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <input type="text" class="search-control" placeholder="Geben Sie eine Zutat ein" id="search-input">
           <button type="submit" class="search-btn btn" id="search-btn">
+
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -31,7 +41,7 @@
       <img src="img/HGB.jpg" alt="meal" width="560" height="460">
 
       <div class="meal-result">
-        <h2 class="title">Your Search Results:</h2>
+        <h2 class="title">Ihre Suchergebnisse:</h2>
   
         <div id="meal">
           
@@ -40,18 +50,18 @@
       </div>
 
       <div class="addMealContainer">
-        <h1>Add Meal</h1>
+        <h1>Mahlzeit Hinzufügen</h1>
         
         <form id="recipe-form">
-            <label for="recipe-name">ID:</label><br>
-            <input type="text" id="mealId" name="recipe-name"><br>
+          
             <label for="recipe-name">MealName:</label><br>
             <input type="text" id="recipe-name" name="recipe-name"><br>
             <label for="recipe-description">Beschreibung:</label><br>
             <textarea id="recipe-description" name="recipe-description"></textarea><br>
-            <label for="recipe-image">Bild hochladen:</label><br>
+            <label for="recipe-image">Bild Hochladen:</label><br>
             <input type="file" id="recipe-image" name="recipe-image" accept="image/*"><br>
             <input type="submit" value="Submit">
+            <br><br>
             <h2>Zutaten</h2>
             <div id="ingredients-list">
                 <div>
@@ -66,16 +76,12 @@
             <input type="submit" value="Rezept speichern">
         </form>
 
-    <script src="scripts.js"></script>
       </div>
-
-      
-
-      
 
       <div class="meal-details">
         <!-- recipe close btn -->
-        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">Close</button>
+
           <i class="fas fa-times"></i>
         </button>
     
@@ -105,17 +111,13 @@
             <a href="#" target="_blank">Watch Video</a>
         </div> 
 
-       
+  
       
 
         </div>
-     
       </div>
     </div>
   </div>
- 
-
-  
 
   <script src="js/main.js"></script>
 </body>

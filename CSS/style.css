@@ -14,7 +14,7 @@ body{
     font-size: 1.05rem;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
-    background: darkorange;
+    background-color: #333;
 }
 
 /*  */
@@ -290,15 +290,15 @@ body{
 .addMealContainer
 {
     width: 100%;
-    background-color: greenyellow;;
+    background-color: rgb(47, 245, 255);;
 }
 
 button {
     margin-top: 10px;
     color: white;
-    background-color: #007BFF;
+    background-color: rgb(4, 0, 128);
     border: none;
-    padding: 5px 10px;
+    padding: 4px 4px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -308,24 +308,34 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: green;
 }
 
+
 input[type="submit"] {
-    background-color: #0056b3;
-    width: 300px;
-    height: 100px;
+    background-color: mediumspringgreen;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+}
+
+input[type="file" ]{
+    max-width: max-content;
+    margin: auto;
+    color: black;
+    font-size: large;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b1;
+    background-color: green;
    
 }
 
 /* Für Bildschirme mit einer Breite von bis zu 600px */
 @media (max-width: 600px) {
     label, input[type="text"], textarea {
-        font-size: 22spx;
+        font-size: 25spx;
+        color: blue;
     }
 }
 
@@ -339,7 +349,7 @@ input[type="text"], textarea {
     border-radius: 10px; 
     border-width: 2px;
     border-style: solid;  
-    border-color: #ffffff;  
+    border-color: navy;  
 }
 
 button {
@@ -348,5 +358,6 @@ button {
     width: 200px;  /* Setzt die Breite des Buttons */
     height: 50px;  /* Setzt die Höhe des Buttons */
     border-radius:  10px;
+    
 }
 

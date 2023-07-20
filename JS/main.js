@@ -10,7 +10,93 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-let meals = [];
+let meals = [
+
+    
+        
+    {
+        mealID: 'meal0',
+        mealName: 'LinsenSuppe',
+        image: 'img/Linsensuppe.jpg',
+        category: 'Category 1',
+        instructions: 'Instructions for Meal 1',
+        youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs'
+    },
+    {
+        mealID: 'meal1',
+        mealName: 'Mtabal',
+        image: 'img/Syrische Auberginen gewürzt.jpg',
+        category: 'Category 2',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY'
+    },
+
+    {
+        mealID: 'meal2',
+        mealName: 'Taboule',
+        image: 'img/Taboule.jpg',
+        category: 'Category 3',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=5sEYkx49du0'
+    },
+
+    {
+        mealID: 'meal3',
+        mealName: 'Mansaf',
+        image: 'Img/Mansaf.jpg',
+        category: 'Category 4',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=ELoCBFgo_4U'
+    },
+
+    {
+        mealID: 'meal4',
+        mealName: 'Molokhia',
+        image: 'img/Molokhia.jpg',
+        category: 'Category 5',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ'
+    },
+
+    {
+        mealID: 'meal5',
+        mealName: 'Mahashi',
+        image: 'img/Mahashi.png',
+        category: 'Category 6',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/shorts/0t7sFXcoyDw'
+    
+    },
+
+    {
+        mealID: 'meal6',
+        mealName: 'Kunafa',
+        image: 'Img/Kunafa.jpg',
+        category: 'Category 7',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
+    },
+
+    {
+        mealID: 'meal7',
+        mealName: 'Halauet Aljeben',
+        image: 'Img/Halauet Aljeben.jpg',
+        category: 'Category 8',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU'
+    },
+
+    {
+        mealID: 'meal8',
+        mealName: 'Verschiedene syrische Süßigkeiten',
+        image: 'Img/Verschiedene syrische Süßigkeiten.jpg',
+        category: 'Category 9',
+        instructions: 'Instructions for Meal 2',
+        youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
+    },
+
+
+];
 
 
 
@@ -18,91 +104,7 @@ let meals = [];
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
 
-    meals = [
-        
-        {
-            mealID: 'meal0',
-            mealName: 'LinsenSuppe',
-            image: 'img/Linsensuppe.jpg',
-            category: 'Category 1',
-            instructions: 'Instructions for Meal 1',
-            youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs'
-        },
-        {
-            mealID: 'meal1',
-            mealName: 'Mtabal',
-            image: 'img/Syrische Auberginen gewürzt.jpg',
-            category: 'Category 2',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/shorts/YHQVl9aIxOY'
-        },
-
-        {
-            mealID: 'meal2',
-            mealName: 'Taboule',
-            image: 'img/Taboule.jpg',
-            category: 'Category 3',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=5sEYkx49du0'
-        },
-
-        {
-            mealID: 'meal3',
-            mealName: 'Mansaf',
-            image: 'Img/Mansaf.jpg',
-            category: 'Category 4',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=ELoCBFgo_4U'
-        },
-
-        {
-            mealID: 'meal4',
-            mealName: 'Molokhia',
-            image: 'img/Molokhia.jpg',
-            category: 'Category 5',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=oclNaCDvefQ'
-        },
-
-        {
-            mealID: 'meal5',
-            mealName: 'Mahashi',
-            image: 'img/Mahashi.png',
-            category: 'Category 6',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/shorts/0t7sFXcoyDw'
-        
-        },
-
-        {
-            mealID: 'meal6',
-            mealName: 'Kunafa',
-            image: 'Img/Kunafa.jpg',
-            category: 'Category 7',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
-        },
-
-        {
-            mealID: 'meal7',
-            mealName: 'Halauet Aljeben',
-            image: 'Img/Halauet Aljeben.jpg',
-            category: 'Category 8',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=5UUGJfkqqGU'
-        },
-
-        {
-            mealID: 'meal8',
-            mealName: 'Verschiedene syrische Süßigkeiten',
-            image: 'Img/Verschiedene syrische Süßigkeiten.jpg',
-            category: 'Category 9',
-            instructions: 'Instructions for Meal 2',
-            youtubeLink: 'https://www.youtube.com/watch?v=videoID2'
-        },
-
-
-    ];
+    
 
     let filteredMeals = meals.filter((meal) =>
     meal.mealName.toLowerCase().includes(searchInputTxt.toLowerCase())
@@ -288,11 +290,16 @@ function captureFormData(event) {
         quantity: ingredientQuantities[index],
     }));
 
-    let recipe = {
-        name: recipeName,
-        description: recipeDescription,
-        ingredients: ingredients,
-    };
+let recipe = 
+    {
+        mealID: 'meal0',
+        mealName: recipeName ,
+        image: 'Bild Hochladen',
+        category: 'Category 1',
+        instructions: 'Beschreibung',
+        ingredientquantity: 'Menge'
+       // youtubeLink: 'https://www.youtube.com/watch?v=glp_xs28nzs'
+    }
     meals.push(recipe);
     
     console.log(meals);
