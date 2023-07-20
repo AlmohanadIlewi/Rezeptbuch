@@ -142,8 +142,7 @@ function getMealRecipe(mealIDs) {
     if (mealIDs.target.classList.contains('recipe-btn')) {
         let mealItem = mealIDs.target.parentElement.parentElement;
         let mealID = mealItem.dataset.id;
-      // Replace this with your own logic to get the recipe details of the selected meal
-      // For this example, let's assume you have the recipe details for each meal
+   
 
         let mealDetails = {
 
